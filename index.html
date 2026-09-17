@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClipStash — Lightweight Windows clipboard history</title>
+    <meta
+      name="description"
+      content="ClipStash is a lightweight Windows clipboard manager with searchable history and pin. Local-only. One-time $4.99. When Ditto glitches and CopyQ feels heavy."
+    />
+    <meta property="og:title" content="ClipStash — Lightweight Windows clipboard history" />
+    <meta
+      property="og:description"
+      content="Searchable clipboard history for Windows. Tray app, Ctrl+Shift+V, pin favorites. Local-only. $4.99 once."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="top">
+      <a class="brand" href="/">ClipStash</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-sm buy-link" href="#buy">Get it — $4.99</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Windows · local-only · one-time purchase</p>
+          <h1>
+            Clipboard history that stays light —
+            <em>when Ditto glitches and CopyQ feels heavy</em>
+          </h1>
+          <p class="lede">
+            Search past copies fast. Pin what matters. Hotkey
+            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>. No account. No cloud.
+            Built for people who live in copy-paste all day.
+          </p>
+          <div class="cta-row" id="buy">
+            <a class="btn buy-link" href="#" data-buy>Get ClipStash — $4.99</a>
+            <p class="cta-note">Portable .exe · Windows 10 / 11</p>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="ClipStash app preview">
+          <div class="window">
+            <div class="window-bar">
+              <span></span><span></span><span></span>
+              <p>ClipStash</p>
+            </div>
+            <div class="window-search">Search clipboard history…</div>
+            <ul class="window-list">
+              <li class="pinned">
+                <span class="pin">📌</span>
+                <div>
+                  <code>sk-live-••••••••</code>
+                  <small>Pinned · 2h ago</small>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>Meeting notes — Q3 launch checklist…</p>
+                  <small>14m ago</small>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>https://example.com/api/v2/orders?status=…</p>
+                  <small>41m ago</small>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <p>Thanks — sent the updated invoice.</p>
+                  <small>1h ago</small>
+                </div>
+              </li>
+            </ul>
+            <div class="window-foot">
+              <span>4 items</span>
+              <span>Clear unpinned</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="features" id="features">
+        <h2>What you get</h2>
+        <p class="section-lede">One job: find what you copied — without another bloated tray app.</p>
+        <div class="feature-grid">
+          <article>
+            <h3>Searchable history</h3>
+            <p>Keep hundreds of clips. Type to filter instantly — ticket IDs, URLs, snippets.</p>
+          </article>
+          <article>
+            <h3>Pin favorites</h3>
+            <p>Pin the lines you reuse every day. Clear the rest when the list gets noisy.</p>
+          </article>
+          <article>
+            <h3>Hotkey + tray</h3>
+            <p><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd> opens the window. Lives quietly in the system tray.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="compare">
+        <h2>Why people look for this</h2>
+        <ul>
+          <li><strong>Win+V</strong> — fine for casual use, shallow history and weak search.</li>
+          <li><strong>Ditto</strong> — solid until it randomly stops capturing.</li>
+          <li><strong>CopyQ</strong> — powerful, often more than you need for daily paste.</li>
+          <li><strong>ClipStash</strong> — lightweight middle ground: history, search, pin.</li>
+        </ul>
+      </section>
+
+      <section class="trust" id="faq">
+        <h2>Before you download</h2>
+        <div class="trust-grid">
+          <article>
+            <h3>Local only</h3>
+            <p>History stays on your PC. No account, no sync cloud, no telemetry dashboard.</p>
+          </article>
+          <article>
+            <h3>SmartScreen warning</h3>
+            <p>
+              Windows may say the app is “not commonly downloaded.” That’s normal for a new,
+              unsigned indie build. Choose <em>More info → Run anyway</em> if you trust the
+              purchase source (Lemon Squeezy).
+            </p>
+          </article>
+          <article>
+            <h3>One-time price</h3>
+            <p>$4.99 once via Lemon Squeezy. No subscription. Portable Windows executable.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <h2>Ready when Ditto isn’t</h2>
+        <p>Lightweight clipboard history for Windows — search, pin, hotkey.</p>
+        <a class="btn buy-link" href="#" data-buy>Get ClipStash — $4.99</a>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <p>© <span id="year"></span> ClipStash · Built for Windows power users</p>
+      <p class="fine">Replace the buy URL in <code>config.js</code> with your Lemon Squeezy product link.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
