@@ -395,6 +395,15 @@ kbd {
   margin: 0.25rem 0;
 }
 
+.ph-badge {
+  margin: 0 0 1rem;
+}
+
+.ph-badge img {
+  display: block;
+  height: auto;
+}
+
 .fine code {
   font-size: 0.85em;
 }
